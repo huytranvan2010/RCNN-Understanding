@@ -98,7 +98,8 @@ Một object có thể được phát hiện trong nhều bounding box. Để lo
 - Selective search có thể đưa ra những proposal regions không được tốt.
 
 ## Tài liệu tham khảo
-1. https://www.geeksforgeeks.org/selective-search-for-object-detection-r-cnn/
+1. https://arxiv.org/abs/1311.2524
 2. https://learnopencv.com/selective-search-for-object-detection-cpp-python/
 3. https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html
-4. 
+4. https://towardsdatascience.com/understanding-object-detection-and-r-cnn-e39c16f37600
+5. https://towardsdatascience.com/understanding-fast-r-cnn-and-faster-r-cnn-for-object-detection-adbb55653d97
