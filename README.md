@@ -1,7 +1,7 @@
 # RCNN-Understanding
 
 ## Giới thiệu
-Năm 2012 [Ross Girshick và các cộng sự](https://arxiv.org/pdf/1311.2524.pdf) đã đề xuất phương pháp mới cho object detection - R-CNN. Sau nay nó đã trở thành nền tảng cho các phương pháp như Fast R-CNN, Faster R-CNN và Mask RCNN. Gần đây **FAIR** (Facebook AI Research) đã phát triển *fully functional framework* gọi là **Detectron2** được xây dựng dựa trên các model state-of-the-art Faster R-CNN và Mask R-CNN.
+Năm 2014 [Ross Girshick và các cộng sự](https://arxiv.org/pdf/1311.2524.pdf) đã đề xuất phương pháp mới cho object detection - R-CNN. Sau nay nó đã trở thành nền tảng cho các phương pháp như Fast R-CNN, Faster R-CNN và Mask RCNN. Gần đây **FAIR** (Facebook AI Research) đã phát triển *fully functional framework* gọi là **Detectron2** được xây dựng dựa trên các model state-of-the-art Faster R-CNN và Mask R-CNN.
 
 ### Object detection
 <img src="https://miro.medium.com/max/941/1*spGG34X1S9MlW512UQ86jA.png" style="display:block; margin-left:auto; margin-right:auto">
@@ -143,4 +143,4 @@ Như vậy chúng ta đã tìm hiểu khá chi tiết về mô hình R-CNN. Chú
 3. https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html
 4. https://towardsdatascience.com/understanding-object-detection-and-r-cnn-e39c16f37600
 5. https://towardsdatascience.com/understanding-fast-r-cnn-and-faster-r-cnn-for-object-detection-adbb55653d97
-6. https://www.youtube.com/watch?v=o4AjHvl_yPg&list=PLANbacZNzD9HEbQ-CkACLyAqC3f0U9Plp&index=3
+6. https://www.youtube.com/watch?v=o4AjHvl_yPg&list=PLANbacZNzD9HEbQ-CkACLyAqC3f0U9Plp&index=3sss
