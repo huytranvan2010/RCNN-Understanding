@@ -143,3 +143,4 @@ Như vậy chúng ta đã tìm hiểu khá chi tiết về mô hình R-CNN. Chú
 3. https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html
 4. https://towardsdatascience.com/understanding-object-detection-and-r-cnn-e39c16f37600
 5. https://towardsdatascience.com/understanding-fast-r-cnn-and-faster-r-cnn-for-object-detection-adbb55653d97
+6. https://www.youtube.com/watch?v=o4AjHvl_yPg&list=PLANbacZNzD9HEbQ-CkACLyAqC3f0U9Plp&index=3
