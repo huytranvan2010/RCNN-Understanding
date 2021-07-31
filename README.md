@@ -70,7 +70,7 @@ Việc lấy positive và negative example cho từng class cho **SVM** như sau
 
 Trong R-CNN còn phân tích sự ảnh hưởng của việc dùng lớp **FC 6** hay **FC 7** lên performance của model với fine tuning và không có fine tuning. Phần này khá dài nên mình không viết ra ở đây.
 ## Bounding Box Regression 
-Đầu vào cho regressor là cặp $(\bold{p}_i, \bold{g}_i)$ - $\bold{p}_i$ có 4 giá trị tương ứng $p_x, p_y, p_w, p_h$ của region proposal (tọa độ tâm, width và height), $\bold{g}_i$ cũng tương tự như vậy có $g_x, g_y, g_w, g_h$ nhưng cho ground-truth bounding boxes. (Cái này thực hiện sau SVM để biết thuộc class nào).
+Đầu vào cho regressor là cặp $(\textbf{p}_i, \textbf{g}_i)$ - $\textbf{p}_i$ có 4 giá trị tương ứng $p_x, p_y, p_w, p_h$ của region proposal (tọa độ tâm, width và height), $\textbf{g}_i$ cũng tương tự như vậy có $g_x, g_y, g_w, g_h$ nhưng cho ground-truth bounding boxes. (Cái này thực hiện sau SVM để biết thuộc class nào).
 
 Regressor sẽ học scale-invariant transformation giữa 2 tâm và log-scale transformation giữa các width và height.
 
@@ -105,7 +105,7 @@ $$\mathcal{L}_* = \sum_{i=\{1,N\}} (t_*^{i} - d_*^{i}(\mathbf{p}))^2 + \lambda \
 
 Trong đó $*$ lần lượt là $x, y, w, h$. Ở đây loss tính riêng cho từng giá trị: 2 tọa độ tâm, width và height chứ không gộp chung lại.
 
-**Chú ý**: Việc xác định các cặp $(\bold{p}_i, \bold{g}_i)$ cũng rất quan trọng, không phải cặp nào cũng được chọn. Nếu box of the region proposal mà quá xa ground-truth bounding box thì việc học sẽ rất khó chính xác và không có ý nghĩa nhiều lắm. Do đó cần chọn $\bold{p}_i$ gần với $\bold{g}_i$. Cụ thể ở đây $\bold{p}_i$ được gán cho $\bold{g}_i$ mà với $\bold{p}_i$ đó nó có IoU cao nhất, IoU cũng phải lớn hơn 0.6 mới lấy. Các $\bold{p}_i$ có IoU thấp hơn 0.6 không được sử dụng.
+**Chú ý**: Việc xác định các cặp $(\textbf{p}_i, \textbf{g}_i)$ cũng rất quan trọng, không phải cặp nào cũng được chọn. Nếu box of the region proposal mà quá xa ground-truth bounding box thì việc học sẽ rất khó chính xác và không có ý nghĩa nhiều lắm. Do đó cần chọn $\textbf{p}_i$ gần với $\textbf{g}_i$. Cụ thể ở đây $\textbf{p}_i$ được gán cho $\textbf{g}_i$ mà với $\textbf{p}_i$ đó nó có IoU cao nhất, IoU cũng phải lớn hơn 0.6 mới lấy. Các $\textbf{p}_i$ có IoU thấp hơn 0.6 không được sử dụng.
 
 ## Một số kỹ thuật hay dùng trong object detection
 ### IoU - Intersection over Union
